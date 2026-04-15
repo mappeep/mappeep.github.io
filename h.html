@@ -94,15 +94,15 @@
 <!-- SIDEBAR -->
 <td width="25%">
 
-<h3>mappeep</h3>
-<p>19 / male<br>music, video games, animes</p>
+<h3>mappeep.com</h3>
+<p>19 / male<br>music, video games, anime</p>
 
 <hr>
 
-<b>navigation</b><br><br>
-<a href="#" onclick="openWin('postswin')">posts</a><br>
+<b>navigation</b><br>
 <a href="#" onclick="openWin('about')">about me</a><br>
 <a href="#" onclick="openWin('contact')">contact</a><br>
+<a href="#" onclick="openWin('postswin')">posts</a>
 
 <hr>
 
@@ -133,14 +133,14 @@
 <div class="post-box">
   <b>Hello World! [entry#001]</b><br>
   First entry into this digital journal!<br>
-  <a href="blogs/entry1.html">read →</a>
+  <a href="blogs/entry#001.html">read →</a>
 </div>
 
 <hr>
 
 <h3>gallery</h3>
-<p>soon...</p>
-<img src="" width="45%">
+
+<img src="images/1370601(1).jpeg" width="45%">
 
 </td>
 
@@ -155,8 +155,8 @@
     <span class="close" onclick="closeWin('about')">X</span>
   </div>
   <div style="padding:10px;">
-    Hi! Welcome to the alive internet theory! I believe more people should start blogging! We must not stop the bots from taking over the internet and have more human things on the internet! Let's make internet great again!! (you can drag around this window btw hehe so cool)
-    <img src="" width="100%">
+    19 / india<br>music producer<br>
+    <img src="images/1370601(1).jpeg" width="100%">
   </div>
 </div>
 
@@ -167,7 +167,7 @@
     <span class="close" onclick="closeWin('contact')">X</span>
   </div>
   <div style="padding:10px;">
-    email: mappeep123@gmail.com
+    email: youremail@gmail.com
   </div>
 </div>
 
@@ -227,7 +227,7 @@ document.querySelectorAll(".window").forEach(win => {
 
 /* MUSIC SYSTEM */
 const songs = [
-  "No music"
+  "music/itwontstopraining.mp3"
 ];
 
 let player = document.getElementById("player");
@@ -237,7 +237,7 @@ let nowplaying = document.getElementById("nowplaying");
 let currentIndex = 0;
 
 /* set default state */
-marquee.innerText = "no music";
+marquee.innerText = "nothing playing";
 player.volume = 0.2; // low volume
 
 function loadSong(i){

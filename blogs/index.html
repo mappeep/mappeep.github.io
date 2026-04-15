@@ -94,8 +94,8 @@
 <!-- SIDEBAR -->
 <td width="25%">
 
-<h3>mappeep</h3>
-<p>19 / male<br>music, video games, animes</p>
+<h3><a href="../index.html">mappeep.com</a></h3>
+<p>19 / india<br>music + life logs</p>
 
 <hr>
 
@@ -120,56 +120,13 @@
 
 </td>
 
-<!-- MAIN -->
+<!-- MAIN*(EDIT THIS PART) -->
 <td width="75%">
 
-<h2>welcome</h2>
-<p>TO THE ALIVE INTERNET THEORY!!</p>
-
-<hr>
-
-<h3>recent posts</h3>
-
-<div class="post-box">
-  <b>Hello World! [entry#001]</b><br>
-  First entry into this digital journal!<br>
-  <a href="blogs/entry1.html">read →</a>
-</div>
-
-<hr>
-
-<h3>gallery</h3>
-<p>soon...</p>
-<img src="" width="45%">
+<li><a href="entry1.html">Hello World! [entry#001]</a></li>
 
 </td>
 
-</tr>
-</table>
-</center>
-
-<!-- ABOUT -->
-<div id="about" class="window" style="top:100px; left:300px;">
-  <div class="titlebar">
-    <span>about me</span>
-    <span class="close" onclick="closeWin('about')">X</span>
-  </div>
-  <div style="padding:10px;">
-    Hi! Welcome to the alive internet theory! I believe more people should start blogging! We must not stop the bots from taking over the internet and have more human things on the internet! Let's make internet great again!! (you can drag around this window btw hehe so cool)
-    <img src="" width="100%">
-  </div>
-</div>
-
-<!-- CONTACT -->
-<div id="contact" class="window" style="top:150px; left:350px;">
-  <div class="titlebar">
-    <span>contact</span>
-    <span class="close" onclick="closeWin('contact')">X</span>
-  </div>
-  <div style="padding:10px;">
-    email: mappeep123@gmail.com
-  </div>
-</div>
 
 <!-- POSTS -->
 <div id="postswin" class="window" style="top:120px; left:450px;">
@@ -185,6 +142,29 @@
     <a href="movies.html">→ movie reviews</a><br><br>
     <a href="games.html">→ game reviews</a><br><br>
     <a href="works.html">→ my works</a><br><br>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="window" style="top:100px; left:300px;">
+  <div class="titlebar">
+    <span>about me</span>
+    <span class="close" onclick="closeWin('about')">X</span>
+  </div>
+  <div style="padding:10px;">
+    19 / male<br>music, video games, animes<br>
+    <img src="images/1370601(1).jpeg" width="100%">
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="window" style="top:150px; left:350px;">
+  <div class="titlebar">
+    <span>contact</span>
+    <span class="close" onclick="closeWin('contact')">X</span>
+  </div>
+  <div style="padding:10px;">
+    email: mappeep123@gmail.com
   </div>
 </div>
 
@@ -227,7 +207,7 @@ document.querySelectorAll(".window").forEach(win => {
 
 /* MUSIC SYSTEM */
 const songs = [
-  "No music"
+  "no music"
 ];
 
 let player = document.getElementById("player");
@@ -291,7 +271,7 @@ window.addEventListener("load", () => {
   player.play().then(() => {
     updateMarquee();
   }).catch(() => {
-    marquee.innerText = "nothing playing";
+    marquee.innerText = "no music";
   });
 });
 
