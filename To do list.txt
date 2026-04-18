@@ -1,7 +1,13 @@
 long time
 
 1. Add all posts section to the posts window.
-2. Find a background image.
+2. Find a better background image.
 3. Figure out how to add a comment section.
 4. Add stickers and gifs.
 5. Add music.
+
+update after every posts
+
+1. index.html > recent posts.
+2. category page
+3. all posts
