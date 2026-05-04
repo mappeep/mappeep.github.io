@@ -9,5 +9,5 @@ long time
 update after every posts
 
 1. index.html > recent posts.
-2. category page
+2. category index page
 3. all posts
